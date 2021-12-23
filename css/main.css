@@ -128,6 +128,13 @@ body {
 .resume_section .resume .header_section .job_position {
   font-weight: 300;
 }
+.resume_section .personal_website {
+  margin-top: 1rem;
+}
+.resume_section .personal_website a {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
 .resume_section .contact_section {
   padding: 4rem;
   justify-content: space-evenly;
@@ -222,6 +229,9 @@ body {
   .resume_section .resume_projects {
     grid-template-columns: 1fr;
   }
+}
+.resume_section .resume_projects .resume_project a {
+  color: blue;
 }
 .resume_section .resume_projects .resume_project h3 {
   font-weight: 500;

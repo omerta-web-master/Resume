@@ -36,6 +36,14 @@ body {
 		}
 	}
 
+	.personal_website {
+		margin-top: 1rem;
+		a {
+			color: blue;
+			border-bottom: 1px solid blue;
+		}
+	}
+
 	.contact_section {
 		padding: 4rem;
 		justify-content: space-evenly;
@@ -143,6 +151,10 @@ body {
 		}
 
 		.resume_project {
+			a {
+				color: blue;
+			}
+
 			h3 {
 				font-weight: 500;
 				font-style: italic;
