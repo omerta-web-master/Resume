@@ -1,0 +1,155 @@
+@use "abstract/index" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	min-height: 200vh;
+	font-family: $primary-font;
+	color: white;
+}
+
+// RESUME SECTION
+.resume_section {
+	.resume {
+		max-width: 1200px;
+		margin: auto;
+		padding: 5rem;
+		background-color: white;
+		color: rgb(41, 38, 38);
+		border-radius: 5px;
+
+		@include sm {
+			padding: 0.8rem;
+		}
+
+		.header_section {
+			text-align: center;
+			.name {
+				font-weight: 600;
+				margin-bottom: 1rem;
+				letter-spacing: 10px;
+			}
+
+			.job_position {
+				font-weight: 300;
+			}
+		}
+	}
+
+	.contact_section {
+		padding: 4rem;
+		justify-content: space-evenly;
+		gap: 1rem;
+		display: flex;
+
+		@include sm {
+			padding: 4rem 0.5rem;
+		}
+
+		@include md {
+			flex-direction: column;
+		}
+		.flex {
+			align-items: center;
+			gap: 0.8rem;
+
+			span {
+				font-size: 1.3rem;
+				color: rgb(92, 88, 88);
+				letter-spacing: 0.3rem;
+				@include sm {
+					letter-spacing: 0;
+					font-size: 0.7;
+				}
+			}
+
+			i {
+				color: gray;
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.resume_section_title {
+		color: rgb(41, 38, 38);
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		padding: 0.3rem 2rem;
+		display: inline-block;
+		letter-spacing: 7px;
+		font-weight: 400;
+		margin-bottom: 1.4rem;
+		background-color: rgb(175, 248, 224);
+	}
+
+	.about_me {
+		p {
+			font-weight: 300;
+			font-size: 1.3rem;
+			text-indent: 2rem;
+		}
+	}
+
+	.educationAndSkills {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		@include lg {
+			flex-direction: column;
+		}
+
+		.education {
+			.years {
+				text-align: center;
+				font-weight: 300;
+				margin-bottom: 0.3rem;
+			}
+			h3 {
+				font-weight: 500;
+				font-size: 1.2rem;
+			}
+		}
+
+		.competencies {
+			h3 {
+				font-weight: 500;
+				margin-bottom: 0.3rem;
+			}
+
+			ul {
+				list-style-type: disc;
+				margin-left: 2rem;
+			}
+		}
+
+		.skills {
+			ul {
+				list-style-type: disc;
+				display: flex;
+				flex-direction: column;
+				gap: 0.3rem;
+				margin-left: 2rem;
+			}
+		}
+	}
+
+	.resume_projects {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+
+		@include md {
+			grid-template-columns: 1fr;
+		}
+
+		.resume_project {
+			h3 {
+				font-weight: 500;
+				font-style: italic;
+			}
+			p {
+				text-indent: 1rem;
+			}
+		}
+	}
+}

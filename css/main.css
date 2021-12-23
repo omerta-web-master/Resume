@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, ::after, ::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+:root {
+  --title-size: 3.7rem;
+  --h1: 2.3rem;
+  --h2: 1.8rem;
+  --h3: 1.35rem;
+  --h4: 1rem;
+  --h5: 0.85rem;
+  --h6: 0.75rem;
+}
+@media (max-width: 968px) {
+  :root {
+    --title-size: 3rem;
+    --h1: 2.3rem;
+    --h2: 1.65rem;
+    --h3: 1.35rem;
+    --h4: 1rem;
+    --h5: 0.85rem;
+    --h6: 0.75rem;
+  }
+}
+@media (max-width: 568px) {
+  :root {
+    --title-size: 2.5rem;
+    --h1: 1.8rem;
+    --h2: 1.5rem;
+    --h3: 1.2rem;
+    --h4: 0.9rem;
+    --h5: 0.85rem;
+    --h6: 0.75rem;
+  }
+}
+
+:root {
+  --sp0: 0.25rem;
+  --sp1: 0.5rem;
+  --sp2: 1rem;
+  --sp3: 1.5rem;
+  --sp4: 3rem;
+  --sp5: 5rem;
+  --sp6: 7rem;
+}
+@media (max-width: 568px) {
+  :root {
+    --sp0: 0.25rem;
+    --sp1: 0.5rem;
+    --sp2: 0.9rem;
+    --sp3: 1.2rem;
+    --sp4: 1.6rem;
+    --sp5: 2.3rem;
+    --sp6: 4.5rem;
+  }
+}
+
+body {
+  min-height: 200vh;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+.resume_section .resume {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem;
+  background-color: white;
+  color: #292626;
+  border-radius: 5px;
+}
+@media (max-width: 568px) {
+  .resume_section .resume {
+    padding: 0.8rem;
+  }
+}
+.resume_section .resume .header_section {
+  text-align: center;
+}
+.resume_section .resume .header_section .name {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 10px;
+}
+.resume_section .resume .header_section .job_position {
+  font-weight: 300;
+}
+.resume_section .contact_section {
+  padding: 4rem;
+  justify-content: space-evenly;
+  gap: 1rem;
+  display: flex;
+}
+@media (max-width: 568px) {
+  .resume_section .contact_section {
+    padding: 4rem 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .resume_section .contact_section {
+    flex-direction: column;
+  }
+}
+.resume_section .contact_section .flex {
+  align-items: center;
+  gap: 0.8rem;
+}
+.resume_section .contact_section .flex span {
+  font-size: 1.3rem;
+  color: #5c5858;
+  letter-spacing: 0.3rem;
+}
+@media (max-width: 568px) {
+  .resume_section .contact_section .flex span {
+    letter-spacing: 0;
+    font-size: 0.7;
+  }
+}
+.resume_section .contact_section .flex i {
+  color: gray;
+  font-size: 1.5rem;
+}
+.resume_section .resume_section_title {
+  color: #292626;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0.3rem 2rem;
+  display: inline-block;
+  letter-spacing: 7px;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+  background-color: #aff8e0;
+}
+.resume_section .about_me p {
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-indent: 2rem;
+}
+.resume_section .educationAndSkills {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+@media (max-width: 968px) {
+  .resume_section .educationAndSkills {
+    flex-direction: column;
+  }
+}
+.resume_section .educationAndSkills .education .years {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+}
+.resume_section .educationAndSkills .education h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.resume_section .educationAndSkills .competencies h3 {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.resume_section .educationAndSkills .competencies ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+.resume_section .educationAndSkills .skills ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-left: 2rem;
+}
+.resume_section .resume_projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .resume_section .resume_projects {
+    grid-template-columns: 1fr;
+  }
+}
+.resume_section .resume_projects .resume_project h3 {
+  font-weight: 500;
+  font-style: italic;
+}
+.resume_section .resume_projects .resume_project p {
+  text-indent: 1rem;
+}
